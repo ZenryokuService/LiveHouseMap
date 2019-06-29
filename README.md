@@ -1,4 +1,7 @@
 # LiveHouseMapを作成する
+
+[![Join the chat at https://gitter.im/LiveHouseMap/community](https://badges.gitter.im/LiveHouseMap/community.svg)](https://gitter.im/LiveHouseMap/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## 実現する内容
 【English】
 1. Create Live House Map where club with live music is and more infomations in Sapporo<br/>
