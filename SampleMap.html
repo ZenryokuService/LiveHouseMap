@@ -4,18 +4,15 @@
     <title>Simple Map</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
-    <script src="./js/LiveHouseMap.js"></script>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
         height: 95%;
-        width: 100%;
       }
-      #funcArea {
-          height: 5%;
-          width: 100%;
-      }
+     #actionBut {
+       height: 5%;
+    } 
       /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
@@ -26,16 +23,14 @@
   </head>
   <body>
     <div id="map"></div>
+    <div id="actionBut">Action Buttons</div>
     <script>
       var map;
       function initMap() {
-        // 札幌駅を中心にする
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 141.351196, lng: 141.351196},
+          center: {lat: -34.397, lng: 150.644},
           zoom: 8
         });
-        // 追加
-
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmoUli30GbzatAUIAbWVm1_TMxxVoP2eo&callback=initMap"
