@@ -9,10 +9,12 @@
        * element that contains the map. */
       #map {
         height: 95%;
+        width: 100%;
       }
-     #actionBut {
-       height: 5%;
-    } 
+      #funcArea {
+          height: 5%;
+          width: 100%;
+      }
       /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
@@ -23,17 +25,24 @@
   </head>
   <body>
     <div id="map"></div>
-    <div id="actionBut">Action Buttons</div>
+   <div id="funcArea">Action Buttons</div>
     <script>
       var map;
+      var target = document.getElementById('map');
+      var point = {lat: 43.064157, lng: 141.353364};
       function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
+           map = new google.maps.Map(target, {
+               center: point,
+               zoom: 14,
+               disableDefaultUI: true,
+               zoomControl: true,
+               clickableIcons: false,
+               mapTypeId: "roadmap"
+           });
+        // 追加
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmoUli30GbzatAUIAbWVm1_TMxxVoP2eo&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmoUli30GbzatAUIAbWVm1_TMxxVoP2eo&callback=initMap&language=ja"
     async defer></script>
   </body>
 </html>
