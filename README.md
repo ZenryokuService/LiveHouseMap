@@ -15,7 +15,7 @@
 2. You can add data from the screen by tapping
 3. Only login users can add live house information from the screen
 4. There is no login processing in the sample creation status (2019-06-29-)
-5. Load data-> KML output-> Display overlay with KML load
+5. Add data to DB -> KML output-> Display overlay with loading KML
 6. Multilingualizationed site
 
 ### DB
@@ -36,23 +36,24 @@ see lower.
 #### Design
 1. Read KML file at initial display, create overlay and display
 2. Operate with the action button at the bottom of the screen <BR/>
-* The area of ​​this action button can slide sideways
+* The area of this action button can slide sideways
 3. An overlay button can be prepared on the action button to add an overlay on the screen <br/>
 * Output KML file when adding a button.
 
+-----------------------------------------------
 ## 仕様
-1. Display data registered in DB as overlay
-2. You can add data from the screen by tapping
-3. Only login users can add live house information from the screen
-4. There is no login processing in the sample creation status (2019-06-29-)
-5. Load data-> KML output-> Display overlay with KML load
-6. Internationalization (Japanese and English)
+1. DBに登録したデータをKMLファイル出力してマップに表示する
+2. 画面をタップしてオーバーレイを作成、追加する
+3. ログインユーザーのみオーバーレイを作成できる
+4. 現状は、ログインユーザー出なくとも画面にオーバーレイを作成できる
+5. データの登録 -> KMLファイル出力 -> KMLロードして画面に表示
+6. 多言語化対応を行う (Japanese and English)
 
 ### DB
-Create the following table in Mysql
-1. Area master (AREA_MST)
-2. Area information (OVERLAY_INFO)
-3. User Management 【WordPress】
+Mysqlに作成するテーブル
+1. エリアマスタ (AREA_MST)
+2. 地域情報 (OVERLAY_INFO)
+3. ユーザー管理 【WordPress】
 
 
 ### 実装方法
