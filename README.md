@@ -76,6 +76,7 @@ Create the following table in Mysql
 * [KMLチュートリアル](https://developers.google.com/kml/documentation/kml_tut?hl=ja)
 * [Gooogle Maps APIチュートリアル](https://developers.google.com/maps/documentation/javascript/tutorial?hl=ja)
 * [自前の記事](https://zenryokuservice.com/wp/category/website/googleapis/)
+* [非同期通信の実装](https://ja.wikipedia.org/wiki/XMLHttpRequest)
 
 ### サーバー情報(Server Info)
 |使用可能プログラム|バージョン|
