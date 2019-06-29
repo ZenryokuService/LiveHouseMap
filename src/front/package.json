@@ -1,0 +1,11 @@
+{
+  "name": "LiveHouseMap-front",
+  "version": "0.0.1",
+  "description": "LiveHouseMap Frontend made by Elm",
+  "main": "index.js",
+  "author": "manzyun",
+  "license": "MIT",
+  "dependencies": {
+    "elm": "^0.19.0-no-deps"
+  }
+}
