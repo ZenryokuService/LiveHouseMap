@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 210 297"
+   height="297mm"
+   width="210mm">
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker1731"
+       refX="0.0"
+       refY="0.0"
+       orient="auto">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path1729" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path1447" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       y="10.494047"
+       x="17.008928"
+       height="129.64583"
+       width="82.398804"
+       id="rect1371"
+       style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1.0" />
+    <rect
+       y="120.10714"
+       x="17.764881"
+       height="20.032734"
+       width="81.642853"
+       id="rect1373"
+       style="opacity:1;vector-effect:none;fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       id="path1375"
+       d="m 63.510912,62.238749 c -5.171991,0.310445 -5.901665,10.081765 -6.071083,6.724892 -0.120632,-2.390205 -2.392811,-6.788277 -6.631491,-8.219313 -4.3009,-1.452042 2.96902,-8.219313 6.631491,-8.219313 3.662471,0 10.602329,9.441748 6.071083,9.713734 z"
+       style="opacity:1;vector-effect:none;fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       id="text1380"
+       y="154.50299"
+       x="30.994047"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         y="154.50299"
+         x="30.994047"
+         id="tspan1378">ホーム画面</tspan></text>
+    <rect
+       y="64.355644"
+       x="115.66072"
+       height="129.64583"
+       width="82.398804"
+       id="rect1371-3"
+       style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       y="75.883926"
+       x="123.97619"
+       height="11.339286"
+       width="67.279762"
+       id="rect1397"
+       style="opacity:1;vector-effect:none;fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       id="path1408"
+       d="M 156.03637,117.09354 V 146.1977"
+       style="fill:none;stroke:#000000;stroke-width:3.96875;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.96875, 7.9375;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       y="96.333641"
+       x="123.97619"
+       height="11.339286"
+       width="67.279762"
+       id="rect1397-6"
+       style="opacity:1;vector-effect:none;fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       id="text1380-7"
+       y="211.09457"
+       x="114.60973"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         y="211.09457"
+         x="114.60973"
+         id="tspan1378-5">ライブハウス情報</tspan><tspan
+         id="tspan1443"
+         style="stroke-width:0.26458332"
+         y="224.32375"
+         x="114.60973">入力画面</tspan></text>
+    <path
+       id="path1445"
+       d="m 148.31779,55.755828 12.7546,-29.153374 -52.47607,-0.364418"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker1731)" />
+    <text
+       id="text2227"
+       y="20.77178"
+       x="113.33374"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Noto Sans CJK JP';-inkscape-font-specification:'Noto Sans CJK JP';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         y="20.77178"
+         x="113.33374"
+         id="tspan2225">編集ボタンをタップ</tspan></text>
+  </g>
+</svg>
