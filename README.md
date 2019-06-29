@@ -30,19 +30,30 @@ Using Mysql,
 * Google Maps API: Create map.
 * HTML5: Visualization.
 
+#### Screen image
+see lower.
+
+#### Design
+1. Read KML file at initial display, create overlay and display
+2. Operate with the action button at the bottom of the screen <BR/>
+* The area of ​​this action button can slide sideways
+3. An overlay button can be prepared on the action button to add an overlay on the screen <br/>
+* Output KML file when adding a button.
+
 ## 仕様
-1. DBに登録してあるデータをオーバレイとして表示する
-2. タップすることで、画面上からデータの追加ができる
-3. ログインユーザーのみ画面からライブハウス情報を追加できる
-4. サンプル作成状態(2019-06-29〜)ではログイン処理なし
-5. データの読み込み->KML出力->KMLのロードでオーバーレイを表示する
-6. 国際化対応を行う(Japanese and English)
+1. Display data registered in DB as overlay
+2. You can add data from the screen by tapping
+3. Only login users can add live house information from the screen
+4. There is no login processing in the sample creation status (2019-06-29-)
+5. Load data-> KML output-> Display overlay with KML load
+6. Internationalization (Japanese and English)
 
 ### DB
-Mysqlにて、以下のテーブルを作成する
-1. エリアマスタ(AREA_MST)
-2. 地域情報(OVERLAY_INFO)
-3. ユーザー管理【WordPress】
+Create the following table in Mysql
+1. Area master (AREA_MST)
+2. Area information (OVERLAY_INFO)
+3. User Management 【WordPress】
+
 
 ### 実装方法
 #### 実装計画
@@ -52,6 +63,8 @@ Mysqlにて、以下のテーブルを作成する
 
 #### 画面のイメージ
 ![サンプルイメージ](https://github.com/ZenryokuService/LiveHouseMap/blob/master/sketch.svg)
+
+#### 設計
 1. 初期表示時に、KMLファイルを読み込みオーバーレイを作成し表示する
 2. 画面の下部にあるアクションボタンで操作する<BR/>
 * このアクションボタンの領域はスライドして横にずらすことができる
