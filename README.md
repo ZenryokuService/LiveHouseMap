@@ -15,7 +15,8 @@
 2. You can add data from the screen by tapping
 3. Only login users can add live house information from the screen
 4. There is no login processing in the sample creation status (2019-06-29-)
-5. Add data to DB -> KML output-> Display overlay with loading KML
+5. <del>Add data to DB -> KML output-> Display overlay with loading KML</del><br/>
+load JSON, view overlays on google map.
 6. Multilingualizationed site
 
 ### DB
@@ -42,11 +43,12 @@ see lower.
 
 -----------------------------------------------
 ## 仕様
-1. DBに登録したデータをKMLファイル出力してマップに表示する
+1. <del>DBに登録したデータをKMLファイル</del>JSONファイルを読み込み、マップにオーバーレイを表示する
 2. 画面をタップしてオーバーレイを作成、追加する
 3. ログインユーザーのみオーバーレイを作成できる
 4. 現状は、ログインユーザー出なくとも画面にオーバーレイを作成できる
-5. データの登録 -> KMLファイル出力 -> KMLロードして画面に表示
+5. JSONファイルの出力<br/>
+<del>データの登録 -> KMLファイル出力 -> KMLロードして画面に表示</del>
 6. 多言語化対応を行う (Japanese and English)
 
 ### DB
