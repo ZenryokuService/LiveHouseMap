@@ -2,6 +2,9 @@
 * [ミーティングルーム(Meeting room)](https://gitter.im/LiveHouseMap/community#)
 * [サンプルページ(Sample page is here)](https://zenryokuservice.com/sample/js/SampleMap.html)
 
+### 使用する技術
+* [Ajax(非同期通信)](https://developer.mozilla.org/ja/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
+
 ## 実現する内容
 【English】
 1. Create Live House Map where club with live music is and more infomations in Sapporo<br/>
