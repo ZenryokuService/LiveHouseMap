@@ -4,6 +4,7 @@
     <title>Simple Map</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
+    <script src="./SampleMap.js"></script>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -21,28 +22,47 @@
         margin: 0;
         padding: 0;
       }
+      #sideWin {
+          height: 35%;
+      }
     </style>
   </head>
-  <body>
-    <div id="map"></div>
-   <div id="funcArea">Action Buttons</div>
+  <body onLoad="loadView()">
+    <div id="map">map</div>
+    <div id="rootContainer">
+        <div id="sideWin">
+            <form id="mapData">
+                名前:<input name="name" type="text" length="20"/><br/>
+                URL:<input name="url" type="text" length="30" /><br/>
+                Image: <input id="imageFile" name="file" type="file" accept="image/*"/><br/>
+                <img id="prevew" height="300px" width="300px"/><br/>
+                <label id="latValue">lat:</label><br/>
+                <label id="lngValue">lng:</label>
+            </form>
+        </div>
+       <footer id="funcArea">
+           <label onclick="sideWinHandle(sideWin)">＜フォームを開く＞</label>
+           <label onclick="postData()">＜データ送信＞</label>
+       </footer>
+   </div>
     <script>
       var map;
       var target = document.getElementById('map');
       var point = {lat: 43.064157, lng: 141.353364};
       function initMap() {
-           map = new google.maps.Map(target, {
-               center: point,
-               zoom: 14,
-               disableDefaultUI: true,
-               zoomControl: true,
-               clickableIcons: false,
-               mapTypeId: "roadmap"
-           });
+        map = new google.maps.Map(target, {
+           center: point,
+           zoom: 14,
+           disableDefaultUI: true,
+           zoomControl: true,
+           clickableIcons: false,
+           mapTypeId: "roadmap"
+        });
         // 追加
-      }
+        map.addListener('click', function(evt) {viewLatLng(evt, map);});
+     }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap&language=ja"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmoUli30GbzatAUIAbWVm1_TMxxVoP2eo&callback=initMap&language=ja"
     async defer></script>
   </body>
 </html>
