@@ -4,6 +4,7 @@
 
 ### 使用する技術
 * [Ajax(非同期通信)](https://developer.mozilla.org/ja/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
+* [SQL(MySql)](https://www.mysql.com/jp/)
 
 ## 実現する内容
 【English】
@@ -24,7 +25,7 @@ load JSON, view overlays on google map.
 
 ### DB
 Using Mysql, 
-1. Area master table(AREA_MST)
+1. Area master table(AREA_MST) Created
 2. over lay info table(OVERLAY_INFO)
 3. User table【WordPress】
 
@@ -38,7 +39,7 @@ Using Mysql,
 see lower.
 
 #### Design
-1. Read KML file at initial display, create overlay and display
+1. Select data from DB<del>Read KML file</del> at initial display, create overlay and display
 2. Operate with the action button at the bottom of the screen <BR/>
 * The area of this action button can slide sideways
 3. An overlay button can be prepared on the action button to add an overlay on the screen <br/>
@@ -56,10 +57,9 @@ see lower.
 
 ### DB
 Mysqlに作成するテーブル
-1. エリアマスタ (AREA_MST)
-2. 地域情報 (OVERLAY_INFO)
+1. エリアマスタ (AREA_MST) 作成済み
+2. 地域情報 (AREA_INFO)
 3. ユーザー管理 【WordPress】
-
 
 ### 実装方法
 #### 実装計画
@@ -71,17 +71,18 @@ Mysqlに作成するテーブル
 ![サンプルイメージ](https://github.com/ZenryokuService/LiveHouseMap/blob/master/sketch.svg)
 
 #### 設計
-1. 初期表示時に、KMLファイルを読み込みオーバーレイを作成し表示する
+1. 初期表示時に、DBからデータ<del>KMLファイル</del>を読み込みオーバーレイを作成し表示する
 2. 画面の下部にあるアクションボタンで操作する<BR/>
 * このアクションボタンの領域はスライドして横にずらすことができる
 3. アクションボタンに地域情報追加ボタンを用意して画面上にオーバーレイを追加することができる<br/>
-* ボタンを追加したときにKMLファイルを出力する。
+* 地域情報を追加した時にDBを更新する<br>
+<del>ボタンを追加したときにKMLファイルを出力する。</del>
 
 
 ### === 参考リンク ===
 * [KMLチュートリアル](https://developers.google.com/kml/documentation/kml_tut?hl=ja)
 * [Gooogle Maps APIチュートリアル](https://developers.google.com/maps/documentation/javascript/tutorial?hl=ja)
-* [自前の記事](https://zenryokuservice.com/wp/category/website/googleapis/)
+* [Google Map初期設定](https://zenryokuservice.com/wp/category/website/googleapis/)
 * [非同期通信の実装](https://ja.wikipedia.org/wiki/XMLHttpRequest)
 
 ### サーバー情報(Server Info)
@@ -92,5 +93,5 @@ Mysqlに作成するテーブル
 |zip(command)||
 |unzip(command)||
 |gcc|	4.1.2|
-|cgi|
+|cgi||
 * メールサーバーあり(Mail server)
