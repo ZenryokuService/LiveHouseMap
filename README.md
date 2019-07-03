@@ -4,6 +4,7 @@
 
 ### 使用する技術
 * [Ajax(非同期通信)](https://developer.mozilla.org/ja/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
+* [Get started Ajax](https://developer.mozilla.org/ja/docs/Web/Guide/AJAX/Getting_Started)
 * [SQL(MySql)](https://www.mysql.com/jp/)
 * スライド方法
 1. [CSSを使用する方法](http://bashalog.c-brains.jp/14/12/22-133149.php)
