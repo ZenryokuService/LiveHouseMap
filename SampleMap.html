@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <!-- META -->
+  <meta name="author" content=“Takunoji”>
+  <meta name="keywords" content="Java Basic, Java LWJGL, Java OpenCV, Java RPI, Java Swing, Java 初めて, Java 基本, Java Socket">
+  <meta name="description" content="Javaでのクロスプラットホームでのアプリ開発をやる、基本〜LWGJL(ゲーム)やOpenCV(画像処理)、ラズパイ(RPI)などで遊んだりもします。">
+
+  <meta property="og:title" content=“PGボックス” >
+  <meta property="og:type" content="技術ブログ">
+  <meta property="og:site_name" content="PGボックス" >
+
+  <link rel=”alternate”>
+
     <title>Simple Map</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
@@ -23,14 +34,19 @@
         padding: 0;
       }
       #sideWin {
-          height: 35%;
+//          height: 600px;
+          width: 300px;
+          position: absolute;
+          top: 0;
+          left: 0;
       }
+
     </style>
   </head>
   <body onLoad="loadView()">
     <div id="map">map</div>
     <div id="rootContainer">
-        <div id="sideWin">
+        <div id="sideWin" style="display: none;">
             <form id="mapData">
                 名前:<input name="name" type="text" length="20"/><br/>
                 URL:<input name="url" type="text" length="30" /><br/>
@@ -41,8 +57,8 @@
             </form>
         </div>
        <footer id="funcArea">
-           <label onclick="sideWinHandle(sideWin)">＜フォームを開く＞</label>
-           <label onclick="postData()">＜データ送信＞</label>
+          <label class="butt" onclick="sideWinHandle(sideWin)">＜LOGIN＞</label>
+          <label class="butt" onclick="postData()">＜データ送信＞</label>
        </footer>
    </div>
     <script>
