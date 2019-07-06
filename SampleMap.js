@@ -3,10 +3,18 @@
  **************************************************/
 /** 登録時に選択する位置情報のマーカー */
  var selectedMarker;
+/** 入力フォーム */
+var sideWin;
+/** XMLHttpRequest */
+var xhr;
 
 /** 画面の初期化 */
 function loadView() {
-    document.getElementById('sideWin').hidden = true;
+    // XMLHttpRequest
+    xhr = createXmlHttpRequest();
+
+    sideWin = document.getElementById('sideWin');
+    sideWin.hidden = true;
     // 画像のプレビュー
     imgDiv = document.getElementById('imageFile');
     imgDiv.onchange = function (evt) {
@@ -24,8 +32,14 @@ function loadView() {
 }
 
 /** 画面の開閉 */
-function sideWinHandle(sideWin) {
-   sideWin.hidden = !sideWin.hidden;
+function sideWinHandle() {
+    console.log("change");
+    if (sideWin.style.display === 'block') {
+        sideWin.style.display = "none";
+    } else {
+        sideWin.style.display = "block";
+    }
+    sideWin.hidden = !sideWin.hidden;
 }
 
 /** サンプルデータ(オーバーレイ)の取得 */
@@ -89,10 +103,36 @@ function selectedOverlayOpt(mapEvent) {
 
 /** セットしたデータをPHPに送信する */
 function postData() {
-
+    ajaxGet();
 }
 
+/** XMLHttpRequest作成 */
+function createXmlHttpRequest() {
+    console.log("init httpRequest");
+    xhr = new XMLHttpRequest();
+    return xhr;
+}
+
+/** レスポンスを取得するときの実装 */
+function recieveResponse() {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+            alert(xhr.responseText);
+        } else {
+            alert('リクエストに問題が発生しました');
+        }
+    }
+}
 /** Ajax送信処理 */
 function ajaxPost() {
-    
+}
+
+/** Ajax送信 */
+function ajaxGet() {
+    console.log(xhr);
+    xhr.open('GET', 'https://zenryokuservice.com/tools/maps/InsertMapInfo.php?param=test', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = recieveResponse;
+
+    xhr.send();
 }
