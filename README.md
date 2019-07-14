@@ -1,6 +1,8 @@
 # ライブハウスマップを作成する(Create Live House Map)
 * [ミーティングルーム(Meeting room)](https://gitter.im/LiveHouseMap/community#)
 * [サンプルページ(Sample page is here)](https://zenryokuservice.com/sample/js/SampleMap.html)
+* [作成履歴(blogs about this work)](https://zenryokuservice.com/wp/?s=google+maps)
+* [サンプルページ(Sample page is here)](https://zenryokuservice.com/sample/js/SampleMap.html)
 
 ### 使用する技術
 * [Ajax(非同期通信)](https://developer.mozilla.org/ja/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
@@ -46,7 +48,7 @@ see lower.
 2. Operate with the action button at the bottom of the screen <BR/>
 * The area of this action button can slide sideways
 3. An overlay button can be prepared on the action button to add an overlay on the screen <br/>
-* Output KML file when adding a button.
+* <del>Output KML file when adding a button</del>.
 
 -----------------------------------------------
 ## 仕様
@@ -78,7 +80,7 @@ Mysqlに作成するテーブル
 2. 画面の下部にあるアクションボタンで操作する<BR/>
 * このアクションボタンの領域はスライドして横にずらすことができる
 3. アクションボタンに地域情報追加ボタンを用意して画面上にオーバーレイを追加することができる<br/>
-* 地域情報を追加した時にDBを更新する<br>
+* [地域情報を追加した時にDBを更新する](https://zenryokuservice.com/wp/2019/07/13/php-ajax-%e3%80%9cdb%e3%81%ab%e7%99%bb%e9%8c%b2%e3%81%97%e3%81%9f%e3%83%87%e3%83%bc%e3%82%bf%e3%82%92%e5%8f%97%e4%bf%a1%e3%81%99%e3%82%8b%e3%80%9c/)<br>
 <del>ボタンを追加したときにKMLファイルを出力する。</del>
 
 
