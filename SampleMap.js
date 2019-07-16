@@ -27,10 +27,7 @@ function getCurrentPos() {
 
 }
 
-/**
- * GeoLocationの成功時のコールバック
- * 参照：https://qiita.com/akkey2475/items/29a5e5ab0e0ca04f4169
- */
+/** GeoLocationの成功時のコールバック */
 function successCurrentPos(position) {
     var crd  = position.coords;
     // マップの位置情報オブジェクト
@@ -48,10 +45,7 @@ function successCurrentPos(position) {
     });
     console.log("test");
 }
-/**
- * GeoLocationのエラー時のコールバック
- * 参照：https://qiita.com/akkey2475/items/29a5e5ab0e0ca04f4169
- */
+/** GeoLocationのエラー時のコールバック */
 function errorCurrentPos(error) {
     // エラーコード(error.code)の番号
     // 0:UNKNOWN_ERROR				原因不明のエラー
@@ -119,8 +113,28 @@ function sideWinHandle() {
 2. 取得したデータをHTMLのDIVタグに出力する
  */
 function dstMapData() {
- //
+ // 初期表示用データの取得
+ xhr.open('GET', 'https://zenryokuservice.com/tools/maps/GetMapInfo.php', true);
+ xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;  charset=UTF-8"');
+ xhr.onreadystatechange = dstMap;
+ try {
+     xhr.send();
+ } catch(e) {
+    console.log(e);
+ }
 }
+
+/** 初期データ取得処理のコールバック関数 */
+function dstMap(response) {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+            alert(xhr.responseText);
+        } else {
+            alert('リクエストに問題が発生しました');
+        }
+    }
+}
+
 
 /** サンプルデータ(JSON)作成 */
 function createMapData(name, address, url, lat, lng) {
